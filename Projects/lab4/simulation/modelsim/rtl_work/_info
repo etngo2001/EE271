@@ -1,0 +1,320 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/simulation/modelsim
+vcenterLight
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1668819246
+!i10b 1
+!s100 ca13d3d<1ilTZ>lB4[36R1
+Ib2VmnC_>jk;4QFb=XaNHz2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 centerLight_sv_unit
+S1
+R0
+Z5 w1668815091
+Z6 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/centerLight.sv
+Z7 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/centerLight.sv
+Z8 L0 11
+Z9 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z10 !s108 1668819246.000000
+Z11 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/centerLight.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/centerLight.sv|
+!i113 1
+Z13 o-sv -work work
+Z14 !s92 -sv -work work {+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4}
+Z15 tCvgOpt 0
+ncenter@light
+vcenterLight_testbench
+R1
+R2
+!i10b 1
+!s100 `M2k_S0TTR]f2jLTnged]1
+Im2NEOZCL8TV`F5ckfYO?b0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 47
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+ncenter@light_testbench
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 F5UlAhba=S9GYSmJVj]0N1
+ILJj9Q<ZOD?J30QRH^0gYi0
+R3
+Z16 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z17 w1668817301
+Z18 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/DE1_SoC.sv
+Z19 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/DE1_SoC.sv
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z20 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/DE1_SoC.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/DE1_SoC.sv|
+!i113 1
+R13
+R14
+R15
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 _NnAo2>Bg[<A;CY23^bHK0
+I_k=b=`S3:l7?PSTf@lIPk2
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+L0 72
+R9
+r1
+!s85 0
+31
+R10
+R20
+R21
+!i113 1
+R13
+R14
+R15
+n@d@e1_@so@c_testbench
+vdoubleFlip
+R1
+R2
+!i10b 1
+!s100 F;IMXc]_HPZ:5[2WC7V3A3
+IRddgn34fBBi9Bj4XNI3cg3
+R3
+Z22 !s105 doubleFlip_sv_unit
+S1
+R0
+Z23 w1668816565
+Z24 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/doubleFlip.sv
+Z25 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/doubleFlip.sv
+L0 9
+R9
+r1
+!s85 0
+31
+R10
+Z26 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/doubleFlip.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/doubleFlip.sv|
+!i113 1
+R13
+R14
+R15
+ndouble@flip
+vdoubleFlip_testbench
+R1
+R2
+!i10b 1
+!s100 <?4j0D3nK`5POC<;Shg9J0
+IKjWo6h8lLLPoa6;6kQJk>1
+R3
+R22
+S1
+R0
+R23
+R24
+R25
+L0 28
+R9
+r1
+!s85 0
+31
+R10
+R26
+R27
+!i113 1
+R13
+R14
+R15
+ndouble@flip_testbench
+vnormalLight
+R1
+R2
+!i10b 1
+!s100 M;M7>?@E>@YhJ7AODo2Hb3
+I;S0R`>FoB<;M^?1EUBjnP2
+R3
+Z28 !s105 normalLight_sv_unit
+S1
+R0
+Z29 w1668813180
+Z30 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/normalLight.sv
+Z31 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/normalLight.sv
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z32 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/normalLight.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/normalLight.sv|
+!i113 1
+R13
+R14
+R15
+nnormal@light
+vnormalLight_testbench
+R1
+R2
+!i10b 1
+!s100 2:SQZF6Z3K0Nlf8g>O=SN3
+Im1K96Kj?@NHQ?cW5>[:HT2
+R3
+R28
+S1
+R0
+R29
+R30
+R31
+Z34 L0 48
+R9
+r1
+!s85 0
+31
+R10
+R32
+R33
+!i113 1
+R13
+R14
+R15
+nnormal@light_testbench
+vuserInput
+R1
+R2
+!i10b 1
+!s100 PdDJQ^dJKefQBE3?a=^fW1
+I3_jGbAUb@IA`nhf]7;0gU3
+R3
+Z35 !s105 userInput_sv_unit
+S1
+R0
+Z36 w1668815081
+Z37 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/userInput.sv
+Z38 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/userInput.sv
+L0 9
+R9
+r1
+!s85 0
+31
+R10
+Z39 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/userInput.sv|
+Z40 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/userInput.sv|
+!i113 1
+R13
+R14
+R15
+nuser@input
+vuserInput_testbench
+R1
+R2
+!i10b 1
+!s100 `PmV::_nNbBM1YRVMd=NR2
+IEocUV5gLkCS7HHEN9Qhc62
+R3
+R35
+S1
+R0
+R36
+R37
+R38
+L0 40
+R9
+r1
+!s85 0
+31
+R10
+R39
+R40
+!i113 1
+R13
+R14
+R15
+nuser@input_testbench
+vvictory
+R1
+R2
+!i10b 1
+!s100 8QgRl;^kne<e0<<2W^9@]3
+ILP9eHDd@YS=h<5_CjCeeg2
+R3
+Z41 !s105 victory_sv_unit
+S1
+R0
+Z42 w1668817300
+Z43 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/victory.sv
+Z44 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab4/victory.sv
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z45 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/victory.sv|
+Z46 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab4|C:/Users/egeen/Desktop/School/EE 271/Projects/lab4/victory.sv|
+!i113 1
+R13
+R14
+R15
+vvictory_testbench
+R1
+R2
+!i10b 1
+!s100 HCNe=V<PHa^]zWJFLa8]<0
+IK6DX5>^3`FoaOYg]:=zC<1
+R3
+R41
+S1
+R0
+R42
+R43
+R44
+R34
+R9
+r1
+!s85 0
+31
+R10
+R45
+R46
+!i113 1
+R13
+R14
+R15

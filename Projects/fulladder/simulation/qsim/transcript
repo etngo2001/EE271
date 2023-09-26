@@ -1,0 +1,28 @@
+# do fulladder.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:25:00 on Oct 10,2022
+# vlog -work work fulladder.vo 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 22:25:00 on Oct 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:25:00 on Oct 10,2022
+# vlog -work work fulladder.vwf.vt 
+# -- Compiling module fulladder_vlg_vec_tst
+# 
+# Top level modules:
+# 	fulladder_vlg_vec_tst
+# End time: 22:25:00 on Oct 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.fulladder_vlg_vec_tst 
+# Start time: 22:25:01 on Oct 10,2022
+# Loading work.fulladder_vlg_vec_tst
+# Loading work.fulladder
+# after#23
+# ** Note: $finish    : fulladder.vwf.vt(51)
+#    Time: 8 us  Iteration: 0  Instance: /fulladder_vlg_vec_tst
+# End time: 22:25:02 on Oct 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

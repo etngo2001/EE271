@@ -1,0 +1,50 @@
+/* Top-level module for DE1-SoC hardware connections to implement a fullAdder.
+ *
+ * The inputs are connected to switches (a - SW2, b - SW1, cin - SW0).
+ * The outputs are connected to LEDs (sum - LEDR0, cout - LEDR1).
+ */
+module DE1_SoC (HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, KEY, LEDR, SW);
+
+	output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	output logic [9:0] LEDR;
+	input  logic [3:0] KEY;
+	input  logic [9:0] SW;
+	
+	fullAdder FA (.a(SW[2]), .b(SW[1]), .cin(SW[0]), .sum(LEDR[0]), .cout(LEDR[1]));
+	
+	// Turn off all 7-seg displays (active low: 1 = off, 0 = on)
+	assign HEX0 = 7'b1111111;
+	assign HEX1 = 7'b1111111;
+	assign HEX2 = 7'b1111111;
+	assign HEX3 = 7'b1111111;
+	assign HEX4 = 7'b1111111;
+	assign HEX5 = 7'b1111111;
+
+endmodule  // DE1_SoC
+
+
+/* testbench for the DE1_SoC */
+module DE1_SoC_testbench();
+
+	logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
+	logic [9:0] LEDR;
+	logic [3:0] KEY;
+	logic [9:0] SW;
+	
+	// using SystemVerilog's implicit port connection syntax for brevity
+	DE1_SoC dut (.HEX0, .HEX1, .HEX2, .HEX3, .HEX4, .HEX5, .KEY, .LEDR, .SW);
+
+	integer i;
+	initial begin
+	
+		SW[9] = 1'b0;
+		SW[8] = 1'b0;
+		
+		// note: this is an unnecessary number of input combinations
+		for (i = 0; i < 2**8; i++) begin
+			SW[7:0] = i; #10;
+		end  // for
+		
+	end  // initial
+	
+endmodule  // DE1_SoC_testbench

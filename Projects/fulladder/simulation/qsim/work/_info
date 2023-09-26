@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 271/Projects/fulladder/simulation/qsim
+vfulladder
+Z1 !s110 1665465900
+!i10b 1
+!s100 ofAzO>H24:BjMoTdK3Pca1
+Ib_h?CaP<`54W;6Jl:VTC_3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1665465897
+8fulladder.vo
+Ffulladder.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1665465900.000000
+!s107 fulladder.vo|
+!s90 -work|work|fulladder.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfulladder_vlg_vec_tst
+R1
+!i10b 1
+!s100 HdZlPS18@@Y;kVf5hWJ^C2
+I2@3QdVKk8oQC?C2c;5IXG3
+R2
+R0
+w1665465895
+8fulladder.vwf.vt
+Ffulladder.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 fulladder.vwf.vt|
+!s90 -work|work|fulladder.vwf.vt|
+!i113 1
+R5
+R6

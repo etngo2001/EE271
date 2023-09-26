@@ -1,0 +1,57 @@
+/*	Name: Nicole Pham, Syed Yasir
+	Date: April 3rd, 2022
+	Class: EE 371
+	Lab 1: Parking Lot Occupancy Counter*/
+
+// seg7 implements a seven segment display that shows the parking lot occupancy.
+// It takes 4-bit bcd and returns 6 by 7-bits leds as output.
+// leds represents {HEX5, HEX4, HEX3, HEX2, HEX1, HEX0} (all six of the seven-segment displays) in that order.
+// leds makes the HEX lights show clear0 at 0 occupancy, 1-15 for 1-15 occupancy, and FULL at 16 occupancy.
+// The input bcd is the parking lot occupancy count. bcd is connected to the counter module.
+module seg7 (bcd, leds);
+	input logic [4:0] bcd;
+	output logic [5:0][6:0] leds;
+	
+	// Assigns 7-bit leds to appropriate segment lighting based on bcd
+	always_comb begin
+		case (bcd) 
+			// Light order: 6543210 (see documentation for which lights each number represents on the HEX)
+			5'b00000: leds = {7'b0100111, 7'b1000111, 7'b0000110, 7'b0001000, 7'b0101111, 7'b1000000}; // CLEAR0 
+			5'b00001: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b1111001}; // 1 
+			5'b00010: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0100100}; // 2 
+			5'b00011: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0110000}; // 3 
+			5'b00100: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0011001}; // 4 
+			5'b00101: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0010010}; // 5
+			5'b00110: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0000010}; // 6
+			5'b00111: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b1111000}; // 7
+			5'b01000: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0000000}; // 8
+			5'b01001: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1000000, 7'b0010000}; // 9
+			5'b01010: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b1000000}; // 10
+			5'b01011: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b1111001}; // 11
+			5'b01100: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b0100100}; // 12
+			5'b01101: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b0110000}; // 13
+			5'b01110: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b0011001}; // 14 
+			5'b01111: leds = {7'b1111111, 7'b1111111, 7'b1111111, 7'b1111111, 7'b1111001, 7'b0010010}; // 15 
+			5'b10000: leds = {7'b0001110, 7'b1000001, 7'b1000111, 7'b1000111, 7'b1111111, 7'b1111111}; // FULL
+			default: leds = 7'bX; // Other inputs are Don't Care cases
+		endcase 
+	end // always_comb
+endmodule // seg7
+
+// Testbench for seg7 module that tests all possible behaviors
+module seg7_testbench();
+	logic [5:0][6:0] leds;
+	logic [4:0] bcd;
+	
+	seg7 dut(.bcd(bcd),.leds(leds));
+	
+	integer i;
+	
+	// Runs all possible combinations of inputs
+	// to display 0 through 16 and a don't care
+	initial begin
+		for(i=0; i < 2**4+2; i++) begin
+			bcd = i; #10;
+		end
+	end // initial
+endmodule // seg7_testbench
