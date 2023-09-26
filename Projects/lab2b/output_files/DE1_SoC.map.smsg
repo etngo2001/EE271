@@ -1,0 +1,8 @@
+Warning (10273): Verilog HDL warning at seg7.sv(20): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/seg7.sv Line: 20
+Warning (10273): Verilog HDL warning at translator.sv(38): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 38
+Warning (10273): Verilog HDL warning at translator.sv(49): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 49
+Warning (10273): Verilog HDL warning at translator.sv(60): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 60
+Warning (10273): Verilog HDL warning at translator.sv(71): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 71
+Warning (10273): Verilog HDL warning at translator.sv(82): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 82
+Warning (10273): Verilog HDL warning at translator.sv(93): extended using "x" or "z" File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 93
+Info (10281): Verilog HDL Declaration information at translator.sv(7): object "I" differs only in case from object "i" in the same scope File: C:/Users/egeen/Desktop/School/EE 271/Projects/lab2b/translator.sv Line: 7

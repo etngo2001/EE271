@@ -1,0 +1,76 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 271/Projects/lab3/fsm {C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:23:33 on Oct 29,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm" C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 21:23:33 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 271/Projects/lab3/fsm {C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/fsm1101.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:23:34 on Oct 29,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm" C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/fsm1101.sv 
+# -- Compiling module fsm1101
+# -- Compiling module fsm1101_testbench
+# 
+# Top level modules:
+# 	fsm1101_testbench
+# End time: 21:23:34 on Oct 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_testbench
+# vsim work.DE1_SoC_testbench 
+# Start time: 21:23:36 on Oct 29,2022
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.fsm1101
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_PERIOD
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/LEDR
+add wave -position end  sim:/DE1_SoC_testbench/KEY
+add wave -position end  sim:/DE1_SoC_testbench/SW
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/DE1_SoC.sv(80)
+#    Time: 2750 ps  Iteration: 1  Instance: /DE1_SoC_testbench
+# Break in Module DE1_SoC_testbench at C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/DE1_SoC.sv line 80
+vsim work.fsm1101_testbench
+# End time: 22:26:18 on Oct 29,2022, Elapsed time: 1:02:42
+# Errors: 0, Warnings: 0
+# vsim work.fsm1101_testbench 
+# Start time: 22:26:18 on Oct 29,2022
+# Loading sv_std.std
+# Loading work.fsm1101_testbench
+# Loading work.fsm1101
+add wave -position end  sim:/fsm1101_testbench/clk
+add wave -position end  sim:/fsm1101_testbench/clock_period
+add wave -position end  sim:/fsm1101_testbench/out
+add wave -position end  sim:/fsm1101_testbench/reset
+add wave -position end  sim:/fsm1101_testbench/w
+run -all
+# ** Note: $stop    : C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/fsm1101.sv(80)
+#    Time: 2150 ps  Iteration: 1  Instance: /fsm1101_testbench
+# Break in Module fsm1101_testbench at C:/Users/egeen/Desktop/School/EE 271/Projects/lab3/fsm/fsm1101.sv line 80
+# End time: 22:32:15 on Oct 29,2022, Elapsed time: 0:05:57
+# Errors: 0, Warnings: 0

@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/egeen/Desktop/School/EE 271/Projects/lab2/simulation/modelsim
+vDE1_SoC
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1666497326
+!i10b 1
+!s100 JAGg0W]cFF`JmFXn>X2800
+I=LfJH@`glTjS_[9Zh1fHX2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 DE1_SoC_sv_unit
+S1
+R0
+Z5 w1666497237
+Z6 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv
+Z7 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv
+L0 2
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1666497326.000000
+Z10 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab2|C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab2}
+Z14 tCvgOpt 0
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 VCOG_J<e[^:c]co0HbiUh3
+I;>_H<WHeO_RBe6P=3GCZQ2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+Z15 L0 13
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_testbench
+velectronicDetectorDevice
+R1
+R2
+!i10b 1
+!s100 ]S5ag]^[O9F;V>Ed3447o3
+Idh5[UjZ1Ih_Z21gP19JeX1
+R3
+Z16 !s105 electronicDetectorDevice_sv_unit
+S1
+R0
+Z17 w1666495874
+Z18 8C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv
+Z19 FC:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+Z20 !s107 C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab2|C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv|
+!i113 1
+R12
+R13
+R14
+nelectronic@detector@device
+velectronicDetectorDevice_testbench
+R1
+R2
+!i10b 1
+!s100 IDdiI<^iJ>4E74NDUO@=F0
+Ie7Xb?G:iaV1NMJgDIF@m^2
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+R15
+R8
+r1
+!s85 0
+31
+R9
+R20
+R21
+!i113 1
+R12
+R13
+R14
+nelectronic@detector@device_testbench

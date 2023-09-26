@@ -1,0 +1,82 @@
+/*	Name: Nicole Pham, Syed Yasir
+	Date: April 3rd, 2022
+	Class: EE 371
+	Lab 1: Parking Lot Occupancy Counter*/
+
+// counter implements a car counter that can count from 0 to 16.
+// It takes 1-bit input clk, reset, incr, and decr and returns 5-bits count as output.
+// count represents the number of cars in the parking lot. count returns to 0 on reset (when reset is set to 1).
+// count does not go below 0 or above 16.
+// count connects to the seg7 module's input.
+// A 1 on incr will add 1 to the count. A 1 on decr will subtract 1 from the count.
+// incr and decr are connected to the carDetection module's enter and exit output.
+// clk represents the clock input.
+module counter (clk, reset, incr, decr, count);
+	input logic clk, reset, incr, decr;
+	output logic [4:0] count;
+
+	always_ff @(posedge clk) begin // Assigns count to appropriate value based on if a car comes in or out
+		if (reset)
+			count <= 5'b0;
+		else if (incr && (count != 5'b10000)) // if count is 16, don't add
+			count <= count + 5'b1;
+		else if (decr && (count != 5'b00000)) // if count is 0, don't subtract
+			count <= count - 5'b1;
+	end // always_ff
+endmodule // counter
+
+// Testbench for counter module that tests for counting cars accurately
+module counter_testbench();
+	logic clk;
+	logic reset;
+	logic incr, decr;
+	logic[4:0] count;
+	
+	counter dut(.clk, .reset, .incr, .decr, .count);
+	
+	parameter clock_period = 100;	//clock setup, from EE 271
+	initial begin
+		clk <= 0;
+		forever #(clock_period /2) clk <= ~clk;
+	end //initial
+	
+	// Runs all possible combinations of inputs
+	// to display 0 through 16
+	initial begin
+		reset <= 1;				@(posedge clk); // reset on, values don't change
+						incr = 0;@(posedge clk);
+						decr = 0;@(posedge clk);
+		reset <= 0;
+						incr = 1;@(posedge clk); // count up past 16
+						incr = 1;@(posedge clk); // 2
+						incr = 1;@(posedge clk); // 3
+						incr = 1;@(posedge clk); // 4
+						incr = 1;@(posedge clk); // 5
+						incr = 1;@(posedge clk); // 6
+						incr = 1;@(posedge clk); // 7
+						incr = 1;@(posedge clk); // 8
+						incr = 1;@(posedge clk); // 9
+						incr = 1;@(posedge clk); // 10
+						incr = 1;@(posedge clk); // 11
+						incr = 1;@(posedge clk); // 12
+						incr = 1;@(posedge clk); // 13
+						incr = 1;@(posedge clk); // 14
+						incr = 1;@(posedge clk); // 15
+						incr = 1;@(posedge clk); // 16
+						incr = 1;@(posedge clk); // should stay 16
+						incr = 1;@(posedge clk); // should stay 16
+						incr = 1;@(posedge clk); // should stay 16
+						incr = 0; // turn off incrementing
+						decr = 1;@(posedge clk); // 15
+						decr = 1;@(posedge clk); // 14
+						decr = 1;@(posedge clk); // 13
+		reset <= 1;
+						incr = 0;@(posedge clk); // reset on, count goes back to zero
+						decr = 0;@(posedge clk);
+		reset <= 0;
+						decr = 1;@(posedge clk); // should stay zero
+						decr = 1;@(posedge clk); // should stay zero
+						decr = 1;@(posedge clk); // should stay zero
+		$stop; //end simulation						
+	end //initial
+endmodule // counter_testbench

@@ -1,0 +1,51 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do DE1_SoC_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 271/Projects/lab2 {C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:55:26 on Oct 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab2" C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/electronicDetectorDevice.sv 
+# -- Compiling module electronicDetectorDevice
+# -- Compiling module electronicDetectorDevice_testbench
+# 
+# Top level modules:
+# 	electronicDetectorDevice_testbench
+# End time: 20:55:26 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/egeen/Desktop/School/EE\ 271/Projects/lab2 {C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:55:26 on Oct 22,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/egeen/Desktop/School/EE 271/Projects/lab2" C:/Users/egeen/Desktop/School/EE 271/Projects/lab2/DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 20:55:26 on Oct 22,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_testbench
+# vsim work.DE1_SoC_testbench 
+# Start time: 20:55:36 on Oct 22,2022
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.electronicDetectorDevice
+add wave -position end  sim:/DE1_SoC_testbench/SW[9]
+add wave -position end  sim:/DE1_SoC_testbench/SW[8]
+add wave -position end  sim:/DE1_SoC_testbench/SW[7]
+add wave -position end  sim:/DE1_SoC_testbench/SW[0]
+add wave -position end  sim:/DE1_SoC_testbench/LEDR[0]
+add wave -position end  sim:/DE1_SoC_testbench/LEDR[1]
+run -all
+# End time: 20:58:38 on Oct 22,2022, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 0

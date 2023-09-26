@@ -1,0 +1,25 @@
+
+module DE1_SoC (LEDR, SW);
+	
+	output logic [9:0] LEDR;
+	input logic [9:0] SW;
+	
+	electronicDetectorDevice (.LEDR(LEDR[9:0]), .SW(SW[9:0]));
+	
+endmodule
+
+module DE1_SoC_testbench();
+
+	logic [9:0] LEDR;
+	logic [9:0] SW;
+	
+	DE1_SoC dut (.LEDR, .SW);
+	
+	integer i;
+	initial begin
+	for (i=0; i<2**10; i++) begin
+		SW[9:0] = i; #10;
+	end
+end
+
+endmodule 

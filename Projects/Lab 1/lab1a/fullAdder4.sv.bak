@@ -1,0 +1,20 @@
+
+module fullAdder4 (A, B, cin, sum, cout);
+
+	input logic A [3:0];
+	input logic B [3:0];
+	input logic cin;
+	
+	output logic sum [3:0];
+	output logic cout;
+	
+	logic c0;
+	logic c1;
+	logic c2;
+	
+	fullAdder FA0 (.A(A[0]), .B(B[0]), .cin(cin), .sum(sum[0]), .cout(c0));
+	fullAdder FA1 (.A(A[1]), .B(B[1]), .cin(c0), .sum(sum[1]), .cout(c1));
+	fullAdder FA2 (.A(A[2]), .B(B[2]), .cin(c1), .sum(sum[2]), .cout(c2));
+	fullAdder FA3 (.A(A[3]), .B(B[3]), .cin(c2), .sum(sum[3]), .cout(cout));
+
+endmodule 
